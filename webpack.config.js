@@ -16,5 +16,11 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
+    filename: 'index.js',
+  },
+  devServer: {
+    publicPath: '/dist/',
+    hot: true,
+    open: true,
   }
 }
